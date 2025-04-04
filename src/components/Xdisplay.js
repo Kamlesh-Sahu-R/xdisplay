@@ -1,4 +1,5 @@
 import {useState} from "react";
+import "./Xdisplay.css"
 
 export function Xdisplay(){
     const [formData, setFormData] = useState({
@@ -23,7 +24,7 @@ export function Xdisplay(){
     };
 
     return(
-        <div>
+        <div className="display">
             <h1>Full Name Display</h1>
             <form onSubmit = {handleSubmite}>
                 <div>
