@@ -3,3 +3,7 @@
     align-items:flex-start;
     flex-direction: column;
 }
+.submit{
+    display: flex;
+    align-items:flex-start;
+}

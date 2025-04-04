@@ -28,7 +28,7 @@ export function Xdisplay(){
             <h1>Full Name Display</h1>
             <form onSubmit = {handleSubmite}>
                 <div>
-                    <lable>
+                    <label>
                         Firt Name:{" "}
                         <input 
                             type = "text"
@@ -37,10 +37,10 @@ export function Xdisplay(){
                             onChange={handleChange}
                             required
                         />
-                    </lable>
+                    </label>
                 </div>
                 <div>
-                    <lable>
+                    <label>
                         Last Name:{" "}
                         <input 
                             type = "text"
@@ -49,12 +49,13 @@ export function Xdisplay(){
                             onChange={handleChange}
                             required
                         />
-                    </lable>
+                    </label>
                 </div>
-                <button type="submit">Submit</button>
+                <div className="submit"><button type="submit">Submit</button></div>
+                
             </form>
             {fullName && (
-                <p> Full Name: {fullName}</p>
+                <h2> Full Name: {fullName}</h2>
             )}
         </div>
     );
